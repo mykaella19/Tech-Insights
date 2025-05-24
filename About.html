@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', sans-serif;
+      background-color: #e5e0d8;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .about-container {
+      display: flex;
+      background-color: #8fbc8f;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 1000px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+
+    .about-image {
+      flex: 1;
+    }
+
+    .about-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-text {
+      flex: 1.2;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-text h1 {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+
+    .about-text h3 {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .about-text h3 span {
+      color: #a39580;
+      font-weight: bold;
+    }
+
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      display: none;
+    }
+
+    .about-text button {
+      background-color: #a39580;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-family: Georgia, sans-serif;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .about-text button:hover {
+      background-color: #c40044;
+    }
+  </style>
+</head>
+<body>
+
+<div class="about-container">
+  <div class="about-image">
+    <img src="https://i.pinimg.com/736x/07/9a/b7/079ab7ba1d2f3fa0cf55748bb7b1f87c.jpg" alt="Profile Image">
+  </div>
+  <div class="about-text">
+    <h1>About Us</h1>
+    <h3>Tech Enthusiast <span>& Web Explorer</span></h3>
+    <p>
+      We are a group of developers and tech researchers passionate about exploring the digital world.
+      Our platform provides insights into the latest trends in technology, web design, and development.
+    </p>
+    <div class="read-more" id="moreText">
+      <p>
+        From analyzing the evolution of front-end frameworks to reviewing the rise of AI in web development,
+        our content dives deep into the tools and innovations shaping the internet today.
+      </p>
+      <p>
+        We also explore topics like cybersecurity, user experience (UX), mobile-first design,
+        and how emerging technologies like blockchain and cloud computing are transforming the web.
+      </p>
+    </div>
+    <button onclick="toggleReadMore()" id="readMoreBtn">Read More</button>
+  </div>
+</div>
+
+<script>
+  function toggleReadMore() {
+    const moreText = document.getElementById("moreText");
+    const btnText = document.getElementById("readMoreBtn");
+
+    if (moreText.style.display === "block") {
+      moreText.style.display = "none";
+      btnText.innerText = "Read More";
+    } else {
+      moreText.style.display = "block";
+      btnText.innerText = "Read Less";
+    }
+  }
+</script>
+
+</body>
+</html>
