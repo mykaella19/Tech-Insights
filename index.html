@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insights - Web Design Principles</title>
+	<script>
+			document.addEventListener("DOMContentLoaded", function () {
+			alert("Welcome to my website!");
+		});
+    </script>
+    <style>
+
+        /* Basic Styling */
+        body {
+            font-family: 'Georgia', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #e5e0d8;
+            color: #3e2723;
+            position: relative; /* Set body to relative positioning */
+        }
+
+        header {
+            background: #8fbc8f;
+            color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #a39580;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        nav a {
+			color: #f0f0f0;
+			margin: 0 1rem; /* Increased spacing */
+			text-decoration: none;
+			font-size: 16px; /* Slightly smaller font */
+			font-weight: bold;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+
+        section {
+            flex: 2;
+            padding: 20px;
+            background: #ffffff;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #8fbc8f;
+        }
+
+        aside {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #8fbc8f;
+            height: 90vh;
+        }
+
+        footer {
+            background: #8fbc8f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        article {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f7c8c8;
+        }
+
+        /* Follow Button Styling */
+        .follow-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #4e342e;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50%;
+            font-size: 18px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+            z-index: 1000; /* Ensure it's above other content */
+        }
+
+        .follow-btn:hover {
+            background-color: #3e2723;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Tech Insights</h1>
+        <p>Your go-to place for web development tips and trends</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="About.Html">About</a>
+        <a href="Gallery.Html">Gallery</a>
+        <a href="ContactUs.Html">ContactUs</a>
+		<a href="Dashboard.Html">Dashboard</a>
+		<a href="Orbit.Html">My Orbit</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Blog Section -->
+        <section>
+            <h2>Latest Blog Posts</h2>
+
+            <article>
+                <h3>Understanding HTML5: Semantics</h3>
+                <p>HTML5 introduced new semantic elements that help define the structure of web pages...</p>
+                <a href="#">Read More</a>
+            </article>
+
+            <article>
+                <h3>CSS Flexbox: A Beginner's Guide</h3>
+                <p>Flexbox is a powerful tool for creating responsive layouts with minimal code.</p>
+                <a href="#">Read More</a>
+            </article>
+        </section>
+
+        <!-- Sidebar Section -->
+        <aside>
+            <h3>Popular Topics</h3>
+            <ul>
+                <li><a href="https://www.w3schools.com/html/html_css.asp">HTML & CSS Basics</a></li>
+                <li><a href="#">JavaScript Fundamentals</a></li>
+                <li><a href="#">Responsive Web Design</a></li>
+                <li><a href="#">Web Accessibility</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tech Insights. All rights reserved.</p>
+    </footer>
+
+    <!-- Follow Button -->
+    <div class="follow-btn">
+        Follow
+    </div>
+
+</body>
+</html>

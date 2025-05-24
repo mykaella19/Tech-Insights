@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Get in Touch</title>
+  <style>
+    body {
+      font-family: Georgia, sans-serif;
+      background-color: #e5e0d8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 20px;
+    }
+
+    .contact-form, .map-box {
+      background-color: #a39580;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      width: 500px;
+      color: #f0f0f0;
+      box-sizing: border-box;
+    }
+
+    .contact-form h2,
+    .map-box h3 {
+      color: #1a1a1a;
+      font-weight: bold;
+      font-size: 26px;
+      margin-bottom: 25px;
+      border-bottom: 3px solid #1a1a1a;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px;
+      margin: 12px 0;
+      border: 2px solid #dcdcdc;
+      border-radius: 10px;
+      font-size: 17px;
+      font-family: Georgia, sans-serif;
+      box-sizing: border-box;
+      outline: none;
+      background-color: #f5f5f5;
+      color: #1a1a1a;
+    }
+
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #4e342e;
+      box-shadow: 0 0 6px #4e342e;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 140px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 14px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #f5f5f5;
+      background-color: #8fbc8f;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-family: Georgia, sans-serif;
+      margin-top: 12px;
+    }
+
+    .contact-form button:hover {
+      background-color: #3e2723;
+    }
+
+    .map-container {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    @media (max-width: 1100px) {
+      .contact-form, .map-box {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Contact Form Box -->
+    <div class="contact-form">
+      <h2>Get in touch</h2>
+      <input type="text" placeholder="Name" />
+      <input type="email" placeholder="Your Email" />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Submit →</button>
+    </div>
+
+    <!-- Map Box -->
+    <div class="map-box">
+      <h3>How to get there</h3>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1930.2250241074488!2d120.98230351640095!3d14.657576067150245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b5ed9477a6df%3A0x5e9dc64016c53f95!2sCaloocan%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1715249643786!5m2!1sen!2sph" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
