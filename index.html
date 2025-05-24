@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Insights - Web Design Principles</title>
+  <style>
+    body {
+      font-family: 'Georgia', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #e5e0d8;
+      color: #3e2723;
+    }
+
+    header {
+      background: #8fbc8f;
+      color: #f0f0f0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #a39580;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    nav a {
+      color: #f0f0f0;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px;
+    }
+
+    section {
+      flex: 2;
+      padding: 20px;
+      background: #ffffff;
+      margin-right: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #8fbc8f;
+    }
+
+    aside {
+      flex: 1;
+      padding: 20px;
+      background: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      border-left: 5px solid #8fbc8f;
+      height: 90vh;
+    }
+
+    footer {
+      background: #8fbc8f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    article {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #f7c8c8;
+    }
+
+    .follow-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #4e342e;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50%;
+      font-size: 18px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .follow-btn:hover {
+      background-color: #3e2723;
+    }
+
+    .read-more-text {
+      display: none;
+      margin-top: 10px;
+    }
+
+    .read-more-link {
+      color: #8f4c4c;
+      cursor: pointer;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to Tech Insights</h1>
+    <p>Your go-to place for web development tips and trends</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="About.html">About</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="ContactUs.html">Contact Us</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="Orbit.html">My Orbit</a>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Latest Blog Posts</h2>
+
+      <article>
+        <h3>Understanding HTML5: Semantics</h3>
+        <p>HTML5 introduced new semantic elements that help define the structure of web pages...</p>
+        <div class="read-more-text">
+          <p>Elements like <code>&lt;header&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> improve readability and accessibility of web content. These tags also assist search engines and assistive technologies in better understanding the page.</p>
+        </div>
+        <span class="read-more-link" onclick="toggleReadMore(this)">Read More</span>
+      </article>
+
+      <article>
+        <h3>CSS Flexbox: A Beginner's Guide</h3>
+        <p>Flexbox is a powerful tool for creating responsive layouts with minimal code.</p>
+        <div class="read-more-text">
+          <p>It makes it easy to align items, distribute space within a container, and adjust layout dynamically as the screen size changes. Mastering Flexbox is essential for any modern front-end developer.</p>
+        </div>
+        <span class="read-more-link" onclick="toggleReadMore(this)">Read More</span>
+      </article>
+    </section>
+
+    <aside>
+      <h3>Popular Topics</h3>
+      <ul>
+        <li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">HTML & CSS Basics</a></li>
+        <li><a href="https://javascript.info/first-steps">JavaScript Fundamentals</a></li>
+        <li><a href="https://www.w3schools.com/html/html_responsive.asp">Responsive Web Design</a></li>
+        <li><a href="https://www.w3schools.com/html/html_accessibility.asp">Web Accessibility</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Tech Insights. All rights reserved.</p>
+  </footer>
+
+  <div class="follow-btn">Follow</div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      alert("Welcome to my website!");
+    });
+
+    function toggleReadMore(link) {
+      const moreText = link.previousElementSibling;
+      if (moreText.style.display === "block") {
+        moreText.style.display = "none";
+        link.innerText = "Read More";
+      } else {
+        moreText.style.display = "block";
+        link.innerText = "Read Less";
+      }
+    }
+  </script>
+
+</body>
+</html>
